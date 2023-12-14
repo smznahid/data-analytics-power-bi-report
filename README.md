@@ -51,7 +51,7 @@ The first milestone in completing the making of my report in power bi, I had to 
 1. After the line graph, I created a table to show the full names total orders and Total Revenue of different customers, and by using the TopN Method I filtered it out to the top 20 customers.
 ![table of customers] (https://i.imgur.com/Sn3k4Vc.png)
 1. I created 3 more cards to show the top customer in more depth.
-1. Finally I Created a Date Slicer to give the user a more customisable experience in the report.
 ![Top Customer](https://i.imgur.com/H8F7XAF.png)
+1. Finally I Created a Date Slicer to give the user a more customisable experience in the report.
 1. After tweaking the page I ended up with a Customer Detail Page looking as follows:
 ![Customer Page](https://i.imgur.com/tVpQnrm.png)

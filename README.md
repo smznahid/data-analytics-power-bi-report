@@ -1,5 +1,15 @@
 # Data Analysis using Power BI
----
+
+# Table of Contents
+- [Introduction](#introduction)
+- [Technology/framework used](#technologyframework-used)
+1. [Step 1: Importing and Transforming Data](#step-1-importing-and-transforming-data)
+1. [Step 2: Creating the Star Data Model](#step-2-creating-the-star-data-model)
+1. [Step 3: Setting up the Report](#step-3-setting-up-the-report)
+1. [Step 4: Building the Customer Detail Page](#step-4-building-the-customer-detail-page)
+1. [Step 5: Building the Executive Summary Page](#step-5-building-the-executive-summary-page)
+1. [Step 6: Building the Product Detail Page](#step-6-building-the-product-detail-page)
+
 ## Introduction:
  This is a project assigned to me by AiCore as part of my Data Analytics Bootcamp, during this project I have been tasked with creating a report, by importing and cleaning data from various sources in Power BI.
 
@@ -56,13 +66,13 @@
 ![charts](https://i.imgur.com/PcWVzFH.png)
 1. Following this I created a line chart with a trend line and forecasting into the future with a confidence interval of 95% of the total customers by a date hierarchy.
 1. After the line graph, I created a table to show the full names total orders and Total Revenue of different customers, and by using the TopN Method I filtered it out to the top 20 customers.
-![table of customers] (https://i.imgur.com/Sn3k4Vc.png)
+![table of customers](https://i.imgur.com/Sn3k4Vc.png)
 1. I created 3 more cards to show the top customer in more depth.
 ![Top Customer](https://i.imgur.com/H8F7XAF.png)
 1. Finally I Created a Date Slicer to give the user a more customisable experience in the report.
 1. After tweaking the page I ended up with a Customer Detail Page looking as follows:
 ![Customer Page](https://i.imgur.com/tVpQnrm.png)
-
+---
 ## Step 5: Building the Executive Summary Page.
 
 1. To kick off the Executive Summary I created 3 cards, corresponding to Total Revenue, Total Profit and Total Orders
@@ -77,3 +87,23 @@
 ![KPI](https://i.imgur.com/G9qeDlz.png)
 1. Putting it all together I got an executive summary page looking like this:
 ![Exec Summary](https://i.imgur.com/MX1SFTg.png)
+---
+## Step 6: Building the Product Detail Page.
+
+1. I began this page with 3 gauge visualisations. Each for the Quarterly Targets for Orders, Profit and Revenue.
+![Gauge](https://i.imgur.com/rEFeit6.png)
+
+1. I then created 2 cards to show the selections the user made. (How the selections would be made will come later).
+![Cards](https://i.imgur.com/x4x71lq.png)
+1. I simply added an area chart of revenue by category.
+![area chart](https://i.imgur.com/eecWR0a.png)
+1. Similar to the customer detail page, I created a TopN (this time top 10) table but for the products instead of customers with more columns.
+![table](https://i.imgur.com/zF6qYCg.png)
+1. I followed up by creating a Scatter Plot of Quantity vs Profitability.
+![Scatter Plot](https://i.imgur.com/hB4IgXp.png)
+1. After creating all my plots and graphs, I created a slicer tool page by creating a large rectangle, adding two slicers  and a back button, in order to function properly I had to ensure that the buttons that were to link to each instance of the page were bookmarked correctly.
+
+![closed](https://i.imgur.com/4OROws8.png) ![open](https://i.imgur.com/u0co5Z8.png) ![bookmarks](https://i.imgur.com/b0Ndvju.png)
+
+1. I ended up with a page like this:
+![page](https://i.imgur.com/jqUp9DF.png)

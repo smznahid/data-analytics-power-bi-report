@@ -9,6 +9,9 @@
 1. [Step 4: Building the Customer Detail Page](#step-4-building-the-customer-detail-page)
 1. [Step 5: Building the Executive Summary Page](#step-5-building-the-executive-summary-page)
 1. [Step 6: Building the Product Detail Page](#step-6-building-the-product-detail-page)
+1. [Step 7: Buiding a the Stores Map Page](#step-7-building-the-stores-map-page)
+1. [Step 8: Cross Filtering and Navigation](#step-8-cross-filtering-and-navigation)
+
 
 ## Introduction:
  This is a project assigned to me by AiCore as part of my Data Analytics Bootcamp, during this project I have been tasked with creating a report, by importing and cleaning data from various sources in Power BI.
@@ -24,7 +27,7 @@
 
 ---
 
-## Step 1: Importing and Transforming Data
+## Step 1: Importing and Transforming Data.
 
 1. First I used the SQL Server Import Wizard to import and transform the Orders Table from an Azure SQL Database. Then Using the Power Query Editor I removed any privacy violating columns, and split order date and shipping date into 2 seperate column, and using the built in column visualisations to see the Column Quality, I could remove rows with NULL values.
 
@@ -36,7 +39,7 @@
 
 ---
 
-## Step 2: Creating the Star Data Model
+## Step 2: Creating the Star Data Model.
 
 1. First I created a Date table with different forms of dates, this is to have a continuous date table use Power BI's Time Intelligence.
 
@@ -107,3 +110,21 @@
 
 1. I ended up with a page like this:
 ![page](https://i.imgur.com/jqUp9DF.png)
+
+---
+## Step 7: Building the Stores Map Page.
+
+1. I began with a Map Visual, with the Regional Hierarchy being the Location.
+![Stores Map](https://i.imgur.com/lx90pKL.png)
+
+1. To allow the user a more refined experience I added a country slicer.
+![country slicer](https://i.imgur.com/sfeYB8Y.png)
+1. To make it easy for the region managers to check on the progress of a given store, I made a stores drill through page which allowed them to pick a specific location to drill through, with various visuals.
+![drill through page](https://i.imgur.com/2xOu3Jy.png)
+1. the drill through field was the country region.     
+![field](https://i.imgur.com/F4iLG4b.png)
+1. I then created a stores tooltip page, with the profit gauge visual.
+![tooltip](https://i.imgur.com/g1ZDENk.png)
+
+---
+## Step 8: Cross Filtering and Navigation.

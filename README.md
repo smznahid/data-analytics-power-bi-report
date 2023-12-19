@@ -128,3 +128,8 @@
 
 ---
 ## Step 8: Cross Filtering and Navigation.
+
+1. First I fixed the cross filtering by making sure some visualisations dont filter with others which could potentially break the visualisation.
+
+1. After finishing with the cross filtering i fully completed the navigation bar
+![Navigation bar](https://i.imgur.com/ybRwTWM.png)

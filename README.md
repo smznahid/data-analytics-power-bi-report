@@ -3,6 +3,7 @@
 # Table of Contents
 - [Introduction](#introduction)
 - [Technology/framework used](#technologyframework-used)
+- [File Structure](#file-structure)
 1. [Step 1: Importing and Transforming Data](#step-1-importing-and-transforming-data)
 1. [Step 2: Creating the Star Data Model](#step-2-creating-the-star-data-model)
 1. [Step 3: Setting up the Report](#step-3-setting-up-the-report)
@@ -11,7 +12,7 @@
 1. [Step 6: Building the Product Detail Page](#step-6-building-the-product-detail-page)
 1. [Step 7: Buiding a the Stores Map Page](#step-7-building-the-stores-map-page)
 1. [Step 8: Cross Filtering and Navigation](#step-8-cross-filtering-and-navigation)
-
+1. [Step 9: Creating Metrics for Users Outside the Company Using SQL](#step-9-creating-metrics-for-users-outisde-the-company-using-sql)
 
 ## Introduction:
  This is a project assigned to me by AiCore as part of my Data Analytics Bootcamp, during this project I have been tasked with creating a report, by importing and cleaning data from various sources in Power BI.
@@ -22,10 +23,54 @@
 - Power BI Desktop
 - DAX Language
 - M Language
-- VSCode
+- VSCode (SQLTools) 
 - CLI
 
 ---
+## File Structure:
+```
+src
+│   .gitignore
+│   Power_BI_Report.pbix
+│   README.md
+├───navigation_bar_images
+│       Customer_Icon.png
+│       Customer_Icon_Blue.png
+│       Dashboard_Icon.png
+│       Dashboard_Icon_Blue.png
+│       Filter_Icon.png
+│       Filter_Icon_Blue.png
+│       Map_Icon.png
+│       Map_Icon_Blue.png
+│       Product_Icon.png
+│       Product_Icon_Blue.png
+│       stores_default.png
+│       stores_hover.png
+│
+├───sql_metrics
+│       question_1.csv
+│       question_1.sql
+│       question_2.csv
+│       question_2.sql
+│       question_3.csv
+│       question_3.sql
+│       question_4.csv
+│       question_4.sql
+│       question_5.csv
+│       question_5.sql
+│
+└───table_column_names
+        country_region_columns.csv
+        dim_customer_columns.csv
+        dim_date_columns.csv
+        dim_product_columns.csv
+        dim_store_columns.csv
+        forquerying2_columns.csv
+        forview_columns.csv
+        orders_columns.csv
+        table_column_names.sql
+        table_names.csv
+```
 
 ## Step 1: Importing and Transforming Data.
 
@@ -133,3 +178,18 @@
 
 1. After finishing with the cross filtering i fully completed the navigation bar
 ![Navigation bar](https://i.imgur.com/ybRwTWM.png)
+
+## Step 9: Creating Metrics for Users Outisde the Company Using SQL
+
+1. First I connected to the Postgres Server using the SQLTools extension in VSCode.
+
+1. Then using sql queries I made a list of the table and column names you can find these in the [table_column_names](./table_column_names/) folder.
+
+1. Finally I used SQL to query for different insights and questions to be answered, these questions were:
+-  1. How many staff are there in all of the UK stores? ([Query](./sql_metrics/question_1.sql)) ([Answer](./sql_metrics/question_1.csv))
+-   2. Which month in 2022 has had the highest revenue? ([Query](./sql_metrics/question_2.sql))([Answer](./sql_metrics/question_2.csv))
+- 3. Which German store type had the highest revenue for 2022? ([Query](./sql_metrics/question_3.sql))([Answer](./sql_metrics/question_3.csv))
+- 4. Create a view where the rows are the store types and the columns are the total sales, percentage of total sales and the count of orders ([Query](./sql_metrics/question_4.sql))([Answer](./sql_metrics/question_4.csv))
+- 5. Which product category generated the most profit for the "Wiltshire, UK" region in 2021? ([Query](./sql_metrics/question_5.sql))([Answer](./sql_metrics/question_5.csv))
+
+you can view all the queries/answers in the [sql_metrics](./sql_metrics/) folder
